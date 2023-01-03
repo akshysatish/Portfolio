@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Earthquake Predictions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Earthquake Predictions</h1>
+							<span class="image main"><img src="images/earthquake.jpg" alt="" /></span>
+							<p>A data mining project that attempts to understand geospatial data and visualize it to analyze earthquake data. Spatial region based trends, Earthquake prediction trends visualized using spatial data.</p>
+                                          <p>The dataset used is the Global Catalog of Calibrated Earthquake Locations that has been collected from 1960 to present date from the U.S. Geological Survey data release. The data collected is obtained from more than 18,000 earthquakes from 250 well-distributed clusters that has a high confidence with very low uncertainty constrained to 1-5km.The data chosen is restricted to the 40 stations in USA distributed across the country in multiple clusters containing events from 1960 to 2021</p>
+                                          <p>Input features: Date & Time of event, Longitude, Latitude, Magnitude, Magnitude type, Depth, Ground Truth.</p>
+                                          <p>DBSCAN is used to perform spatial clustering which generates a set of clusters classifying the intensity of the earthquakes. LSTM is used for Magnitude Prediction and a heatmap is generated indicating hotzones of high risk regions. The LSTM model is built as a Sequential model with LSTM layers using mean squared error as the loss function and Adam optimizer.</p>
+                                          <p>The results visualize hotzones based on the predictions made by the LSTM model</p>
+                                          <img src="images/ep1.png" alt="" />
+                                          <p>Tools and Libraries used: Pandas, Matplotlib, Numpy, Geopandas, scikit-learn, Folium (to visualize the map and hotzones)</p>
+                                          <p>Dataset: Global Catalog of Calibrated Earthquake Locations Harley M. Benz, 2021, Global Catalog of Calibrated Earthquake Locations, U.S. Geological Survey data release, https://doi.org/10.5066/P95R8K8G.</p>
+                                          <p>This problem is widely applicable to a lot of organizations that can use this data to decide on how to best manage the incoming disaster.</p>
+                                          <p>Find code here: <a href="https://github.com/akshysatish/EarthquakePredictions" style="color:#ffffff;">Github Repository-EarthquakePredictions</a></p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+                        <footer id="footer">
+                              <div class="inner">
+                                    <section>
+                                          <h2 style="color: #585858;">Find me</h2>
+                                          <ul class="icons">
+                                                <li><a href="https://www.instagram.com/akshysatish/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                                                <li><a href="https://github.com/akshysatish" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/akshay-satish/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                                <li><a href="mailto: akshaysatish1998@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                                          </ul>
+                                    </section>
+                                    <ul class="copyright">
+                                          <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                              </div>
+                        </footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

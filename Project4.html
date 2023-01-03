@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Graph-based Keyword Extraction</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Graph-based Keyword Extraction</h1>
+							<span class="image main"><img src="images/proj4stk.jpg" alt="" /></span>
+							<p>This project implements a Natural Language Processing model blended with graph method K-Truss/k-core truss decomposition to create a Graph Based Keyword Extractor. The keywords or keyphrases extracted are done so based on relevance or how important the word is in context of the sentence. Words of a sentence are ranked to get the most important words or keywords.</p>
+                                          <p>A k-truss in a graph is a subset of the graph such that every edge in the subject is supported by at least k-2 other edges that form triangles with that particular edge. A k-truss is maximal when it is not a subgraph of another k-truss. We want to find the maximal k-trusses of a graph.</p>
+                                          <p>First, a set of stopwords are defined. Then, the tokens in a sentence are extracted and cleaned of stopwords. These clean tokens form an initial complete graph. The edges are traversed to appropriately weigh them and the resulting weighted graphs are used to generate and order a list of keywords. The resulting subgraph of related keywords look like</p>
+                                          <img src="images/proj4res.png" alt="" />
+                                          <p>Tools and Libraries used: Natural Language Toolkit(nltk), Textacy, Spacy, Torch, Keras, SKLearn, BERTTokenizer, NetworkX.</p>
+                                          <p>Conference Presentation:
+                                                Vijaya Shetty S., Akshay S., Shritej Reddy B.S., Rakesh H., Mihir M., Shetty J. (2022) Graph-Based Keyword Extraction for Twitter Data. In: Shetty N.R., Patnaik L.M., Nagaraj H.C., Hamsavath P.N., Nalini N. (eds) Emerging Research in Computing, Information, Communication and Applications. Lecture Notes in Electrical Engineering, vol 790. Springer, Singapore. https://doi.org/10.1007/978-981-16-1342-5_68</p>
+                                          <p>Find code here: <a href="https://github.com/akshysatish/K-Truss-GraphBasedKeyword" style="color:#ffffff;">Github Repository-K-Truss-GraphBasedKeyword</a></p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+                        <footer id="footer">
+                              <div class="inner">
+                                    <section>
+                                          <h2 style="color: #585858;">Find me</h2>
+                                          <ul class="icons">
+                                                <li><a href="https://www.instagram.com/akshysatish/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                                                <li><a href="https://github.com/akshysatish" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/akshay-satish/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                                <li><a href="mailto: akshaysatish1998@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                                          </ul>
+                                    </section>
+                                    <ul class="copyright">
+                                          <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                              </div>
+                        </footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

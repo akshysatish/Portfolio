@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BERT Tweet Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>BERT Tweet Analysis</h1>
+							<span class="image main"><img src="images/proj3stk.jpg" alt="" /></span>
+							<p>Keyword Extraction and Sentiment Analysis of Tweets.</p>
+                                          <p>Tweet data is mined using the Twitter API and analysed to extract keywords using Bidirectional Encoder Representations from Transformers(BERT). Extracted keywords are added to the dictionary of words to use as reference for new words. Summarization is performed by relating keywords to topics based on similar context which is a vector space consisting of multiple clusters of related words.
+                                                Finally, Sentiment Analysis is done to classify positive, negative, and neutral tweets</p>
+                                          <p>Keyword extraction is tasked with the automatic identification of terms that best describe the subject of a document. It is a text analysis technique that consists of automatically extracting the most important words and expressions in a text. It helps summarize the content of a text and recognize the main topics which are being discussed. You can use a keyword extractor to pull out keywords or groups of two or more words that create a key phrase.</p>
+                                          <p>NLP is highly data consuming so transfer learning helps in building models on top of prebuilt models. The base BERT model is used to build a model that extracts keywords by tokenization, word embedding, attention mapping tweets to generate a dataset and then training on that dataset. From this, we can generate a summary as well as perform sentiment analysis.</p>
+                                          <p>Tools and Libraries used: Natural Language Toolkit(nltk), Textacy, Spacy, Torch, Keras, SKLearn, BERTTokenizer, BERTConfig, BERTAdam, Twitter API.</p>
+                                          <p>BERT is a highly extensive NLP tool that can be used as a baseline for many tasks and transfer learning can be used to build better and specific models on top of BERT.</p>
+                                          <p>Considering that more than 80 percent of the data we generate every day is unstructured ― meaning it is not organized in a predefined way and, therefore, is hard to analyze and process ― keyword extraction allows to lift the most important words from huge sets of data in just seconds and obtain insights about the topics.</p>
+                                          <p>Find code here: <a href="https://github.com/akshysatish/BERT-TweetAnalysis" style="color:#ffffff;">Github Repository-BERT-TweetAnalysis</a></p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+                        <footer id="footer">
+                              <div class="inner">
+                                    <section>
+                                          <h2 style="color: #585858;">Find me</h2>
+                                          <ul class="icons">
+                                                <li><a href="https://www.instagram.com/akshysatish/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                                                <li><a href="https://github.com/akshysatish" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/akshay-satish/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                                <li><a href="mailto: akshaysatish1998@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+                                          </ul>
+                                    </section>
+                                    <ul class="copyright">
+                                          <li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                    </ul>
+                              </div>
+                        </footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
